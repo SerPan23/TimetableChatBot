@@ -9,10 +9,7 @@ bot = telebot.TeleBot(se.TOKEN)
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.chat.id,
-                     "Выбери действие", reply_markup=kb.markupClose)
-    items = db.show_all_lessons()
-    for i in items:
-        bot.send_message(message.chat.id, text=i)
+                     "Выбери действие:", reply_markup=kb.select_action())
 
 
 bot.enable_save_next_step_handlers(delay=2)
