@@ -5,3 +5,6 @@ import db
 
 bot = telebot.TeleBot(se.TOKEN)
 
+def send_all_lessons():
+    return db.show_all_lessons()
+
