@@ -2,9 +2,9 @@ import json
 
 data = {
     "student_lessons": {
-        "0": [
+        "2020-09-05": [
             {
-                "date": "05.09.2020",
+
                 "HW": [
                     {
                         "lesson1": "балдеж",
@@ -21,7 +21,7 @@ data = {
         ],
         "1": [
             {
-                "date": "06.09.2020",
+                "date": "2020-09-05",
                 "HW": [
                     {
                         "lesson1": "балдеж",
@@ -39,6 +39,6 @@ data = {
 
     }
 }
-
+parsed_string = json.dumps(data)
 with open("data_file.json", "w") as write_file:
     json.dump(data, write_file)
