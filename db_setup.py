@@ -37,7 +37,7 @@ data = {
                     "english": "10:00"
 
                 },
-            "wensday":
+            "wendsday":
                 {
                     "math": "9:00",
                     "english": "10:00"
