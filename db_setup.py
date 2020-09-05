@@ -10,7 +10,12 @@ data = {
         "1": [{
             "date": "05.09.2020",
             "name": "Test lesson 1",
-            "HW": "None"
+            "HW": [
+                {
+                    "lesson1": "балдеж",
+                    "lesson2": "балдеж2"
+                }
+            ]
         }],
     }
 }
