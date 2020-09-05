@@ -4,14 +4,13 @@ teacher = False
 
 markupClose = types.ReplyKeyboardRemove(selective=False)
 
-
-BackKb = types.ReplyKeyboardMarkup(row_width=1)
-itembtn1 = types.KeyboardButton('Назад')
+BackKb = types.InlineKeyboardMarkup(row_width=1)
+itembtn1 = types.InlineKeyboardButton('Назад', callback_data='back')
 BackKb.add(itembtn1)
 
 
 def select_action():
-    if(teacher):
+    if teacher:
         actionListKb = types.InlineKeyboardMarkup(row_width=1)
         timetableDay = types.InlineKeyboardButton(text='расписание на день', callback_data='timetableDay')
         timetableWeek = types.InlineKeyboardButton(text='расписание на неделю', callback_data='timetableWeek')
