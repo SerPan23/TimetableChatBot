@@ -26,6 +26,8 @@ def callback_worker(call):
         pass
     elif call.data == "addHomework":
         pass
+    elif call.data == "back":
+        send_welcome(call.message)
 
 
 @bot.message_handler(func=lambda message: True)

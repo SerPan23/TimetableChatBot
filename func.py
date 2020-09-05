@@ -11,13 +11,13 @@ def send_day_lessons(message):
 
 
 def send_week_lessons(message):
-    pass
+    bot.send_message(message.chat.id, "Расписание на неделю:", reply_markup=kb.BackKb)
 
 
 def send_day_hw(message):
-    pass
+    bot.send_message(message.chat.id, "Домашка:", reply_markup=kb.BackKb)
 
 
 def send_week_hw(message):
-    pass
+    bot.send_message(message.chat.id, "Домашка на неделю:", reply_markup=kb.BackKb)
 
