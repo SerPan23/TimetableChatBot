@@ -43,14 +43,14 @@ def get_day_num(message):
         t = dn[2]
         s = dn[3]+dn[4]
         if (int(f) >= 1 or int(f) <= 31) and t == "." and (int(s) >= 1 or int(s) <= 12):
-            print('yes')
+            # print('yes')
             send_day_hw(message, dn)
         else:
-            print('no1')
+            # print('no1')
             m = bot.send_message(message.chat.id, "Напишите номер дня.месяца (в формате 00.00):")
             bot.register_next_step_handler(m, get_day_num)
     else:
-        print('no2')
+        # print('no2')
         m = bot.send_message(message.chat.id, "Напишите номер дня.месяца (в формате 00.00):")
         bot.register_next_step_handler(m, get_day_num)
 
