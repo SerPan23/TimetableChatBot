@@ -2,41 +2,28 @@ import json
 
 data = {
     "student_lessons": {
-        "2020-09-05": [
+        "2020-09-05": {
+            "HW": {
+                    "lesson1": "балдеж",
+                    "lesson2": "балдеж2"
+            },
+            "lessons":
             {
-
-                "HW": [
-                    {
-                        "lesson1": "балдеж",
-                        "lesson2": "балдеж2"
-                    }
-                ],
-                "lessons": [
-                    {
-                        "math": "9:00",
-                        "english": "10:00"
-                    }
-                ]
+                "math": "9:00",
+                "english": "10:00"
             }
-        ],
-        "1": [
+        },
+        "2020-09-06": {
+            "HW": {
+                    "lesson1": "балдеж",
+                    "lesson2": "балдеж2"
+            },
+            "lessons":
             {
-                "date": "2020-09-05",
-                "HW": [
-                    {
-                        "lesson1": "балдеж",
-                        "lesson2": "балдеж2"
-                    }
-                ],
-                "lessons": [
-                    {
-                        "math": "9:00",
-                        "english": "10:00"
-                    }
-                ]
+                "math": "9:00",
+                "english": "10:00"
             }
-        ]
-
+        },
     }
 }
 parsed_string = json.dumps(data)
