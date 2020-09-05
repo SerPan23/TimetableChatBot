@@ -24,6 +24,29 @@ data = {
                 "english": "10:00"
             }
         },
+        "all_days":{
+            "monday":
+                {
+                    "math": "9:00",
+                    "english": "10:00"
+
+                },
+            "thuesday":
+                {
+                    "math": "9:00",
+                    "english": "10:00"
+
+                },
+            "wensday":
+                {
+                    "math": "9:00",
+                    "english": "10:00"
+
+                }
+
+
+        }
+
     }
 }
 parsed_string = json.dumps(data)
