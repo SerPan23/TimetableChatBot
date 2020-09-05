@@ -3,9 +3,6 @@ import kb
 import settings as se
 import telebot
 import func as f
-import threading
-
-lock = threading.Lock()
 bot = telebot.TeleBot(se.TOKEN)
 
 
