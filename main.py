@@ -15,17 +15,23 @@ def send_welcome(message):
 @bot.callback_query_handler(func=lambda call: True)
 def callback_worker(call):
     if call.data == "timetableDay":
-        pass
+        f.send_day_lessons(call.message)
     elif call.data == "timetableWeek":
-        pass
+        f.send_week_lessons(call.message)
     elif call.data == "homeworkDay":
-        pass
+        f.send_day_hw(call.message)
     elif call.data == "homeworkWeek":
-        pass
+        f.send_week_hw(call.message)
     elif call.data == "timetableBuffet":
         pass
     elif call.data == "addHomework":
         pass
+
+
+@bot.message_handler(func=lambda message: True)
+def callback_msg(message):
+    if message.text == 'Назад':
+        send_welcome(message)
 
 
 bot.enable_save_next_step_handlers(delay=2)

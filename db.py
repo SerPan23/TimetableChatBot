@@ -1,5 +1,17 @@
 import json
 
 
-def show_all_lessons():
+def send_day_lessons():
+    pass
+
+
+def send_week_lessons():
+    pass
+
+
+def send_day_hw():
+    pass
+
+
+def send_week_hw(mesage):
     pass

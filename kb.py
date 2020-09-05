@@ -1,8 +1,15 @@
 from telebot import types
 import db
+teacher = False
 
 markupClose = types.ReplyKeyboardRemove(selective=False)
-teacher = False
+
+
+BackKb = types.ReplyKeyboardMarkup(row_width=1)
+itembtn1 = types.KeyboardButton('Назад')
+BackKb.add(itembtn1)
+
+
 def select_action():
     if(teacher):
         actionListKb = types.InlineKeyboardMarkup(row_width=1)
