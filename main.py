@@ -12,6 +12,22 @@ def send_welcome(message):
                      "Выбери действие:", reply_markup=kb.select_action())
 
 
+@bot.callback_query_handler(func=lambda call: True)
+def callback_worker(call):
+    if call.data == "timetableDay":
+        pass
+    elif call.data == "timetableWeek":
+        pass
+    elif call.data == "homeworkDay":
+        pass
+    elif call.data == "homeworkWeek":
+        pass
+    elif call.data == "timetableBuffet":
+        pass
+    elif call.data == "addHomework":
+        pass
+
+
 bot.enable_save_next_step_handlers(delay=2)
 bot.load_next_step_handlers()
 bot.polling(none_stop=True, interval=0)
