@@ -13,5 +13,5 @@ def send_day_hw():
     pass
 
 
-def send_week_hw(mesage):
+def send_week_hw():
     pass
