@@ -19,9 +19,10 @@ def callback_worker(call):
     elif call.data == "timetableWeek":
         f.send_week_lessons(call.message)
     elif call.data == "homeworkDay":
-        f.send_day_hw(call.message)
-    elif call.data == "homeworkWeek":
-        f.send_week_hw(call.message)
+        # f.send_day_hw(call.message)
+        m = bot.send_message(call.message.chat.id, "Напишите номер дня.месяца:")
+        bot.register_next_step_handler(m, f.get_day_num)
+
     elif call.data == "timetableBuffet":
         pass
     elif call.data == "addHomework":

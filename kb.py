@@ -22,7 +22,6 @@ def select_action():
         timetableDay = types.InlineKeyboardButton(text='расписание на день', callback_data='timetableDay')
         timetableWeek = types.InlineKeyboardButton(text='расписание на неделю', callback_data='timetableWeek')
         homeworkDay = types.InlineKeyboardButton(text='домашнее задание на день', callback_data='homeworkDay')
-        homeworkWeek = types.InlineKeyboardButton(text='домашнее задание на неделю', callback_data='homeworkWeek')
         timetableBuffet = types.InlineKeyboardButton(text='расписание буфета', callback_data='timetableBuffet')
-        actionListKb.add(timetableDay, timetableWeek, homeworkDay, homeworkWeek, timetableBuffet)
+        actionListKb.add(timetableDay, timetableWeek, homeworkDay, timetableBuffet)
     return actionListKb
