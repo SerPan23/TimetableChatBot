@@ -35,17 +35,17 @@ allDays = {
 }
 
 
-        # "2020-09-06": {
-        #     "HW": {
-        #         "lesson1": "балдеж",
-        #         "lesson2": "балдеж2"
-        #     },
-        #     "lessons":
-        #         {
-        #             "math": "9:00",
-        #             "english": "10:00"
-        #         }
-        # }
+# "2020-09-06": {
+#     "HW": {
+#         "lesson1": "балдеж",
+#         "lesson2": "балдеж2"
+#     },
+#     "lessons":
+#         {
+#             "math": "9:00",
+#             "english": "10:00"
+#         }
+# }
 
 def add_day(date, day):
     global allDays
