@@ -49,11 +49,11 @@ allDays = {
 
 def add_day(date, day):
     global allDays
-    k = {date: {"HW": {}, "lesson": f"{allDays.get(f'{day}')}"}}
+    k = {date: {"HW": {}, "lesson": f"{allDays.get(f'{day}')}"},}
     with open("student_lessons.json", "a") as write_file:
         json.dump(k, write_file)
 
 
-add_day("2020-09-10", 4)
+add_day("2020-09-11", 4)
 # data["student_lessons"] = {
 #     date: {"HW": {}, "lesson": {f"{data['all_days'][f'{day}']}"}}}
