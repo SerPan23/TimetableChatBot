@@ -6,7 +6,7 @@ mdb = pymongo.MongoClient(se.MONGODB_LINK)[se.MONGO_DB]
 
 def add_day(date, day):
     allDay = mdb.all_days
-    days = {date: {"HW": {}, "lesson": {f"{allDay}": f'{day}'}}}
+    days = {f"{date}": {"HW": {}, "lesson": {f"{allDay}": f'{day}'}}}
     add = mdb.student_lesson
     add.insert_one(days).inserted_id
 
